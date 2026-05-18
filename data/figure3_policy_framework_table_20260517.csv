@@ -1,0 +1,5 @@
+step_order,risk_question,shock_or_gate,observable_endpoint,allowed_claim,policy_use,status
+1,Where may exposure matter?,Structural source-country dependence,UN Comtrade source-country and HS6 exposure,"Exposure pathway, not disruption",Supplier watchlist and targeted evidence collection,supported
+2,Can exposure become disruption?,"Mine, route, port, licence, conflict or logistics gate","Official production, route, port or administrative endpoint",Gate-conditioned disruption hypothesis,Inventory review and alternate-source readiness,framework
+3,Is an exchange-rule shock observable?,"Warranting, origin reporting, brand eligibility or exchange rule","Origin labels, warrant categories and off-warrant eligibility",Deliverability reclassification,Eligible-stock monitoring and contract review,supported
+4,Did it become broad market response?,Market-context or price-curve response,"Regional premiums, Cash-3M spreads and price windows",Market impact only if nulls are defeated,Hedging or contract adjustment only after null defeat,boundary_null

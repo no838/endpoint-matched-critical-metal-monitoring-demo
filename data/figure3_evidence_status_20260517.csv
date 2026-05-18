@@ -1,0 +1,7 @@
+evidence_layer,claim_id,status,support,claim_ceiling
+Global exposure baseline,C1,supported,Tin top-1 source share 27.8%; nickel top-5 source share 51.3%.,Maps exposure pathways only.
+LME deliverability endpoint,C2-C3,supported,Origin endpoint AUC 1.000; exact p 0.0079.,"Exchange-rule observability, not broad market impact."
+Price and premium endpoints,C4,boundary_null,Cash-3M minimum BH q 0.0685; aluminium premium null rows 6.,Broad price transmission is unsupported.
+Indonesia tin source closure,C5,ready_with_boundary,Jan-Feb HS8001 zero tonnes; March 3802.5 tonnes; near-zero run 2/2.,"Trade-gate consistency check, not permit-level causality."
+Permit-level tin causality,blocked,blocked,Company-month admin rows recovered: 0.,Cannot claim RKAB/MOMS/SIMBARA causal timing.
+Universal predictive risk score,blocked,blocked,Evidence is endpoint-specific and general validation remains bounded.,"Use framework, not a universal predictor."
