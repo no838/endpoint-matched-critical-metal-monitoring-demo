@@ -1,0 +1,6 @@
+benchmark,auc,p,fp,fn
+Origin/warrant mean share,1.0,0.0079365079365079,0,0
+Origin/warrant max share,1.0,0.0079365079365079,0,0
+Origin/warrant months positive,1.0,0.0079365079365079,0,0
+Aggregate stock mean change,0.75,0.1428571428571428,1,1
+Aggregate stock max change,0.65,0.2777777777777778,2,2
