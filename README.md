@@ -24,6 +24,8 @@ outputs/
   Figure_1_Global_trade_exposure_demo.{png,pdf,svg}
   Figure_2_Exposure_vs_LME_deliverability_demo.{png,pdf,svg}
   Figure_3_Endpoint_matched_quantitative_evidence_demo.{png,pdf,svg}
+  Supplementary_Figure_1_quantitative_checks_demo.{png,pdf,svg}
+manifest_demo_20260522.md
 ```
 
 ## What This Demo Shows
@@ -47,7 +49,7 @@ Create an environment with Python 3, `pandas`, and `matplotlib`, then run:
 python scripts/build_quantitative_figures.py
 ```
 
-The script writes PNG, PDF, and SVG files into `outputs/`.
+The script writes PNG, PDF, and SVG files for Figures 1-3 and the supplementary quantitative figure into `outputs/`.
 
 ## Data Boundary
 

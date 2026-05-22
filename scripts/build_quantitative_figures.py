@@ -200,10 +200,42 @@ def build_figure3() -> None:
     save(fig, "Figure_3_Endpoint_matched_quantitative_evidence_demo")
 
 
+def build_supplementary() -> None:
+    null_df = pd.read_csv(DATA_DIR / "lme_exact_label_null_auc_20260515.csv")
+    tin = pd.read_csv(DATA_DIR / "tin_rkab_source_closure_event_panel_20260517.csv")
+    tin["month_date"] = pd.to_datetime(tin["month_date"])
+
+    fig = plt.figure(figsize=(10.8, 4.8))
+    gs = GridSpec(1, 2, wspace=0.3, figure=fig)
+
+    ax1 = fig.add_subplot(gs[0, 0])
+    vals = null_df.loc[null_df["benchmark"] == "origin_endpoint_annual_mean_share", "null_auc"]
+    ax1.violinplot(vals, showmeans=True, showextrema=False)
+    ax1.scatter([1], [1.0], color=COLORS["target"], s=48, zorder=3)
+    ax1.set_xticks([1])
+    ax1.set_xticklabels(["Origin endpoint"])
+    ax1.set_ylabel("Permutation AUC")
+    ax1.set_ylim(0.15, 1.05)
+    ax1.set_title("a  Permutation distribution remains well below the observed AUC", loc="left")
+    ax1.grid(axis="y", alpha=0.16, linewidth=0.6)
+
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax2.plot(tin["month_date"], tin["hs8001_primary_tonnes"], color=COLORS["tin"], marker="o", linewidth=1.8)
+    ax2.axhline(0, color="#9A9A9A", linewidth=0.8)
+    ax2.axvline(pd.Timestamp("2024-01-01"), color=COLORS["target"], linestyle="--", linewidth=0.9)
+    ax2.axvline(pd.Timestamp("2024-03-01"), color=COLORS["top5"], linestyle="--", linewidth=0.9)
+    ax2.set_ylabel("HS8001 export tonnage")
+    ax2.set_title("b  Indonesia tin monthly trend shows the halt and partial reopen", loc="left")
+    ax2.tick_params(axis="x", rotation=25)
+    ax2.grid(axis="y", alpha=0.16, linewidth=0.6)
+    save(fig, "Supplementary_Figure_1_quantitative_checks_demo")
+
+
 def main() -> None:
     build_figure1()
     build_figure2()
     build_figure3()
+    build_supplementary()
     print(f"[OK] wrote outputs to {OUT_DIR}")
 
 
