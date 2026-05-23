@@ -1,6 +1,6 @@
 # Data Provenance
 
-Generated: 2026-05-22
+Generated: 2026-05-23
 
 This demo package contains only derived demonstration tables copied from the local SPC submission workspace. The files were selected because they reproduce the quantitative public-safe figures without redistributing raw or restricted records.
 

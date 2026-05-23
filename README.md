@@ -6,6 +6,8 @@ This repository is a minimal, public-safe demonstration package for the manuscri
 
 The package reproduces quantitative demonstration figures from derived, non-restricted tables. It is intentionally not a raw-data repository and does not redistribute raw London Metal Exchange records, raw customs downloads, or other third-party licensed data.
 
+This is the public repository cited in the manuscript's data and code availability statement.
+
 ## Contents
 
 ```text
